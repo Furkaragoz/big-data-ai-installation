@@ -6,7 +6,7 @@ First, update your system packages and install Java:
 
 ```bash
 sudo apt update
-sudo apt install openjdk-17-jdk -y
+sudo apt install openjdk-11-jdk -y
 ```
 
 ---
