@@ -22,13 +22,13 @@ sudo update-alternatives --config java
 This command will list all available Java versions on your system. You should see an output similar to:
 
 ```
-/usr/lib/jvm/java-17-openjdk-amd64/bin/java
+/usr/lib/jvm/java-11-openjdk-amd64/bin/java
 ```
 
 In this case, **JAVA\_HOME** should be set to:
 
 ```
-/usr/lib/jvm/java-17-openjdk-amd64
+/usr/lib/jvm/java-11-openjdk-amd64
 ```
 
 ---
