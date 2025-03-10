@@ -41,6 +41,6 @@ Feel free to contribute by adding more installation guides or improving existing
 
 ---
 
-📌 **Author**: Your Name\
-📅 **Last Updated**: YYYY-MM-DD
+📌 **Author**: Furkan Karagöz \
+📅 **Last Updated**: 10 - 03 - 2025
 
