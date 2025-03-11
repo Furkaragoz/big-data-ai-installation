@@ -46,7 +46,7 @@ nano ~/.bashrc
 Add the following lines at the end of the file (Update the path according to your system!):
 
 ```bash
-export JAVA_HOME=/usr/lib/jvm/java-17-openjdk-amd64
+export JAVA_HOME=/usr/lib/jvm/java-11-openjdk-amd64
 export PATH=$JAVA_HOME/bin:$PATH
 ```
 
@@ -95,9 +95,9 @@ java -version
 The output should be similar to:
 
 ```
-openjdk version "17.0.9" 2024-01-16
-OpenJDK Runtime Environment (build 17.0.9+11)
-OpenJDK 64-Bit Server VM (build 17.0.9+11, mixed mode)
+openjdk version "11.0.9" 2024-01-16
+OpenJDK Runtime Environment (build 11.0.9+11)
+OpenJDK 64-Bit Server VM (build 11.0.9+11, mixed mode)
 ```
 
 If you have followed all the steps correctly, Java should now be successfully installed and configured on your Ubuntu system!
