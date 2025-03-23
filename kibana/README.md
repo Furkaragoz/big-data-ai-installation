@@ -9,7 +9,7 @@ This guide provides step-by-step instructions to install and configure **Kibana*
 Before proceeding, ensure the following are installed:
 
 - [Java Installation Guide](https://github.com/Furkaragoz/big-data-ai-installation/tree/main/java)
-- [Elasticsearch Installation]([Java Installation Guide](https://github.com/Furkaragoz/big-data-ai-installation/tree/main/elastic)
+- [Elasticsearch Installation](https://github.com/Furkaragoz/big-data-ai-installation/tree/main/elastic)
 
 ---
 
