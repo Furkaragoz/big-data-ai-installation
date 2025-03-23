@@ -44,8 +44,8 @@ Modify or ensure the following lines are present:
 ```yaml
 server.port: 5601
 server.host: "0.0.0.0"
-elasticsearch.hosts: ["http://localhost:9200"]
-xpack.security.enabled: false
+server.ssl.enabled: false
+
 ```
 
 > Note: Security settings should be re-enabled for production use.
