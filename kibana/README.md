@@ -96,5 +96,5 @@ You should see the Kibana UI.
 
 ## Resources
 
-- [Elasticsearch Guide](https://github.com/your-repo/elasticsearch-installation-guide)
-- [Java Installation Guide](https://github.com/ozgunakin/java-installation-on-ubuntu20.04)
+- [Java Installation Guide](https://github.com/Furkaragoz/big-data-ai-installation/tree/main/java)
+- [Elasticsearch Installation](https://github.com/Furkaragoz/big-data-ai-installation/tree/main/elastic)
