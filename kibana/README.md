@@ -13,25 +13,18 @@ Before proceeding, ensure the following are installed:
 
 ---
 
-## Step 1 – Add Kibana GPG Key and Repository
 
-```bash
-wget -qO - https://artifacts.elastic.co/GPG-KEY-elasticsearch | sudo gpg --dearmor -o /usr/share/keyrings/elastic-keyring.gpg
-echo "deb [signed-by=/usr/share/keyrings/elastic-keyring.gpg] https://artifacts.elastic.co/packages/8.x/apt stable main" | sudo tee /etc/apt/sources.list.d/elastic-8.x.list
-```
 
----
-
-## Step 2 – Install Kibana
+## Step 1 – Install Kibana
 
 ```bash
 sudo apt-get update
-sudo apt-get install kibana
+sudo apt-get install kibana logstash
 ```
 
 ---
 
-## Step 3 – Configure Kibana
+## Step 2 – Configure Kibana
 
 Open the configuration file:
 
@@ -52,7 +45,7 @@ server.ssl.enabled: false
 
 ---
 
-## Step 4 – Start & Enable Kibana
+## Step 3 – Start & Enable Kibana
 
 Start the Kibana service:
 
@@ -74,7 +67,7 @@ sudo systemctl status kibana
 
 ---
 
-## Step 5 – Access Kibana
+## Step 4 – Access Kibana
 
 Once Kibana is running, open your browser and visit:
 
