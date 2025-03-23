@@ -2,7 +2,7 @@
 
 This guide provides a step-by-step approach to installing **Apache NiFi** on Ubuntu 20.04.
 
-## 🚀 Step 1 - Prepare the Environment
+##  Step 1 - Prepare the Environment
 
 ### Install Java 11
 NiFi requires Java 11. You can follow this guide to install Java:  
@@ -18,7 +18,7 @@ cd ~/downloads
 
 ---
 
-## 🔽 Step 2 - Download Apache NiFi
+## Step 2 - Download Apache NiFi
 
 Before proceeding, check the latest NiFi version at:  
 [Apache NiFi Download Page](https://nifi.apache.org/download.html)
@@ -31,7 +31,7 @@ wget https://archive.apache.org/dist/nifi/1.15.0/nifi-1.15.0-bin.tar.gz
 
 ---
 
-## 📦 Step 3 - Extract & Move NiFi Files
+##  Step 3 - Extract & Move NiFi Files
 
 Extract the downloaded NiFi archive:
 
@@ -47,7 +47,7 @@ sudo mv nifi-1.15.0 /opt/nifi
 
 ---
 
-## ⚙️ Step 4 - Configure NiFi Properties
+## Step 4 - Configure NiFi Properties
 
 Navigate to the configuration directory:
 
@@ -90,7 +90,7 @@ Save and exit: **CTRL + X → Y → Enter**
 
 ---
 
-## 🔧 Step 5 - Install NiFi as a Service
+## Step 5 - Install NiFi as a Service
 
 Navigate to the NiFi directory:
 
@@ -112,7 +112,7 @@ sudo systemctl daemon-reload
 
 ---
 
-## ▶️ Step 6 - Start NiFi Service
+##  Step 6 - Start NiFi Service
 
 Start NiFi using the system service:
 
@@ -130,7 +130,7 @@ If everything is correct, you should see **NiFi running**.
 
 ---
 
-## 🌐 Step 7 - Access NiFi Web UI
+##  Step 7 - Access NiFi Web UI
 
 Open a browser and go to:
 
@@ -146,7 +146,7 @@ http://127.0.0.1:8080/nifi
 
 ---
 
-### ✅ **Final Notes**
+###  **Final Notes**
 - If NiFi fails to start, check logs:
   ```bash
   tail -f /opt/nifi/logs/nifi-app.log
