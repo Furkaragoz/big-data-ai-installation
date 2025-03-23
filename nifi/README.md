@@ -6,7 +6,7 @@ This guide provides a step-by-step approach to installing **Apache NiFi** on Ubu
 
 ### Install Java 11
 NiFi requires Java 11. You can follow this guide to install Java:  
-[Java Installation Guide](https://github.com/ozgunakin/java-installation-on-ubuntu20.04)
+[Java Installation Guide](https://github.com/Furkaragoz/big-data-ai-installation/tree/main/java)
 
 ### Create a Download Directory
 To organize the installation files, create a directory:
