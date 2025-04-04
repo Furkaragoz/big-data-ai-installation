@@ -1,0 +1,31 @@
+version: '3.8'
+services:
+  es-data-2:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.1
+    container_name: es-data-2
+    environment:
+      - node.name=es-data-2
+      - cluster.name=elk-cluster
+      - node.roles=data
+      - discovery.seed_hosts= # master node IP
+      - network.host=0.0.0.0
+      - network.publish_host= # This node private ip
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=false
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - es-data-2:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200
+      - 9300:9300
+    networks:
+      - elk
+
+volumes:
+  es-data-2:
+
+networks:
+  elk:

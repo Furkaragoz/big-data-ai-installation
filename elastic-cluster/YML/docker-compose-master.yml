@@ -1,0 +1,44 @@
+version: '3.8'
+services:
+  es-master:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.12.1
+    container_name: es-master
+    environment:
+      - node.name=es-master
+      - cluster.name=elk-cluster
+      - node.roles=master
+      - discovery.seed_hosts # DATA NODES PRIVATE IPs For example : 10.X.X.X , 10.X.X.X etc.
+      - cluster.initial_master_nodes=es-master
+      - network.host=0.0.0.0
+      - network.publish_host= # MACHINE IP
+      - bootstrap.memory_lock=true
+      - xpack.security.enabled=false
+    ulimits:
+      memlock:
+        soft: -1
+        hard: -1
+    volumes:
+      - es-master-data:/usr/share/elasticsearch/data
+    ports:
+      - 9200:9200  # ES REST API
+      - 9300:9300
+    networks:
+      - elk
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:8.12.1
+    container_name: kibana
+    environment:
+      - ELASTICSEARCH_HOSTS=http://[MASTER PRIVATE IP]:9200
+    ports:
+      - 5601:5601
+    networks:
+      - elk
+    depends_on:
+      - es-master
+
+volumes:
+  es-master-data:
+
+networks:
+  elk:
