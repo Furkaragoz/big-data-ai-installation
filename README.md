@@ -8,7 +8,9 @@ This repository contains installation guides and setup instructions for various 
 - [Apache Spark](spark/README.md) - Installation guide for Apache Spark.
 - [Apache NiFi](nifi/README.md) - Installation guide for Apache NiFi.
 - [Elasticsearch](elastic/README.md) - Installation guide for Elasticsearch.
+- [Elasticsearch-cluster](elastic-cluster/README.md) - Installation guide for Elasticsearch in EC2 Cluster with docker.
 - [Kibana](kibana/README.md) - Installation guide for Kibana.
+- 
 
 ## 🔧 How to Use
 
